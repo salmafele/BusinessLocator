@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3892E64423A1F0D1009861F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E64323A1F0D1009861F8 /* AppDelegate.swift */; };
+		3892E64623A1F0D1009861F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E64523A1F0D1009861F8 /* SceneDelegate.swift */; };
+		3892E64823A1F0D1009861F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E64723A1F0D1009861F8 /* ViewController.swift */; };
+		3892E64B23A1F0D1009861F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3892E64923A1F0D1009861F8 /* Main.storyboard */; };
+		3892E64D23A1F0D5009861F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3892E64C23A1F0D5009861F8 /* Assets.xcassets */; };
+		3892E65023A1F0D5009861F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3892E64E23A1F0D5009861F8 /* LaunchScreen.storyboard */; };
+		3892E65B23A1F0D5009861F8 /* FindMyStarbucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E65A23A1F0D5009861F8 /* FindMyStarbucksTests.swift */; };
+		3892E66623A1F0D5009861F8 /* FindMyStarbucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */; };
+		38CB160423A2AE1D004FAE2E /* GoogleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160323A2AE1D004FAE2E /* GoogleData.swift */; };
+		38CB160623A2AF59004FAE2E /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160523A2AF59004FAE2E /* Place.swift */; };
+		38CB160823A2B413004FAE2E /* GoogleApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160723A2B412004FAE2E /* GoogleApiKey.swift */; };
+		40BFC81DB9B5DA6B08703F8F /* Pods_FindMyStarbucks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052450E48975ED9B2CB6BAFE /* Pods_FindMyStarbucks.framework */; };
+		F126F3C26B685DD01FCD74C0 /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C92A17211C3C4C5AD8D5BBE /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */; };
+		F3DD8FEAE2666AD66135339B /* Pods_FindMyStarbucksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C54B727F8E54EE8880F2A38 /* Pods_FindMyStarbucksTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3892E65723A1F0D5009861F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3892E63823A1F0D1009861F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3892E63F23A1F0D1009861F8;
+			remoteInfo = FindMyStarbucks;
+		};
+		3892E66223A1F0D5009861F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3892E63823A1F0D1009861F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3892E63F23A1F0D1009861F8;
+			remoteInfo = FindMyStarbucks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		052450E48975ED9B2CB6BAFE /* Pods_FindMyStarbucks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyStarbucks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07240955FAE64D5FF94637DF /* Pods-FindMyStarbucks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks.debug.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks.debug.xcconfig"; sourceTree = "<group>"; };
+		0C54B727F8E54EE8880F2A38 /* Pods_FindMyStarbucksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyStarbucksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C92A17211C3C4C5AD8D5BBE /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindMyStarbucks_FindMyStarbucksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA4229B0D065178FFB9E6AA /* Pods-FindMyStarbucksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucksTests.debug.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3892E64023A1F0D1009861F8 /* FindMyStarbucks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindMyStarbucks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3892E64323A1F0D1009861F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3892E64523A1F0D1009861F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3892E64723A1F0D1009861F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3892E64A23A1F0D1009861F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3892E64C23A1F0D5009861F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3892E64F23A1F0D5009861F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3892E65123A1F0D5009861F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3892E65623A1F0D5009861F8 /* FindMyStarbucksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyStarbucksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3892E65A23A1F0D5009861F8 /* FindMyStarbucksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarbucksTests.swift; sourceTree = "<group>"; };
+		3892E65C23A1F0D5009861F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3892E66123A1F0D5009861F8 /* FindMyStarbucksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyStarbucksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarbucksUITests.swift; sourceTree = "<group>"; };
+		3892E66723A1F0D5009861F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CB160323A2AE1D004FAE2E /* GoogleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleData.swift; sourceTree = "<group>"; };
+		38CB160523A2AF59004FAE2E /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		38CB160723A2B412004FAE2E /* GoogleApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleApiKey.swift; sourceTree = "<group>"; };
+		39C15CA6A800345722656F9F /* Pods-FindMyStarbucks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks.release.xcconfig"; sourceTree = "<group>"; };
+		9F9D49E938C364793A2492E4 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD55228EAA04B727CDF5B90B /* Pods-FindMyStarbucksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucksTests.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests.release.xcconfig"; sourceTree = "<group>"; };
+		D68FD9AEA4E48391A10A5B4F /* Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3892E63D23A1F0D1009861F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40BFC81DB9B5DA6B08703F8F /* Pods_FindMyStarbucks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3892E65323A1F0D5009861F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DD8FEAE2666AD66135339B /* Pods_FindMyStarbucksTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3892E65E23A1F0D5009861F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F126F3C26B685DD01FCD74C0 /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3892E63723A1F0D1009861F8 = {
+			isa = PBXGroup;
+			children = (
+				3892E64223A1F0D1009861F8 /* FindMyStarbucks */,
+				3892E65923A1F0D5009861F8 /* FindMyStarbucksTests */,
+				3892E66423A1F0D5009861F8 /* FindMyStarbucksUITests */,
+				3892E64123A1F0D1009861F8 /* Products */,
+				78AF726B458FD65F4C2DAC9B /* Pods */,
+				801737FD3371E1EA246A4361 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3892E64123A1F0D1009861F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3892E64023A1F0D1009861F8 /* FindMyStarbucks.app */,
+				3892E65623A1F0D5009861F8 /* FindMyStarbucksTests.xctest */,
+				3892E66123A1F0D5009861F8 /* FindMyStarbucksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3892E64223A1F0D1009861F8 /* FindMyStarbucks */ = {
+			isa = PBXGroup;
+			children = (
+				3892E64323A1F0D1009861F8 /* AppDelegate.swift */,
+				3892E64523A1F0D1009861F8 /* SceneDelegate.swift */,
+				3892E64723A1F0D1009861F8 /* ViewController.swift */,
+				38CB160723A2B412004FAE2E /* GoogleApiKey.swift */,
+				38CB160523A2AF59004FAE2E /* Place.swift */,
+				38CB160323A2AE1D004FAE2E /* GoogleData.swift */,
+				3892E64923A1F0D1009861F8 /* Main.storyboard */,
+				3892E64C23A1F0D5009861F8 /* Assets.xcassets */,
+				3892E64E23A1F0D5009861F8 /* LaunchScreen.storyboard */,
+				3892E65123A1F0D5009861F8 /* Info.plist */,
+			);
+			path = FindMyStarbucks;
+			sourceTree = "<group>";
+		};
+		3892E65923A1F0D5009861F8 /* FindMyStarbucksTests */ = {
+			isa = PBXGroup;
+			children = (
+				3892E65A23A1F0D5009861F8 /* FindMyStarbucksTests.swift */,
+				3892E65C23A1F0D5009861F8 /* Info.plist */,
+			);
+			path = FindMyStarbucksTests;
+			sourceTree = "<group>";
+		};
+		3892E66423A1F0D5009861F8 /* FindMyStarbucksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */,
+				3892E66723A1F0D5009861F8 /* Info.plist */,
+			);
+			path = FindMyStarbucksUITests;
+			sourceTree = "<group>";
+		};
+		78AF726B458FD65F4C2DAC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				07240955FAE64D5FF94637DF /* Pods-FindMyStarbucks.debug.xcconfig */,
+				39C15CA6A800345722656F9F /* Pods-FindMyStarbucks.release.xcconfig */,
+				D68FD9AEA4E48391A10A5B4F /* Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig */,
+				9F9D49E938C364793A2492E4 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */,
+				2AA4229B0D065178FFB9E6AA /* Pods-FindMyStarbucksTests.debug.xcconfig */,
+				CD55228EAA04B727CDF5B90B /* Pods-FindMyStarbucksTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		801737FD3371E1EA246A4361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				052450E48975ED9B2CB6BAFE /* Pods_FindMyStarbucks.framework */,
+				0C92A17211C3C4C5AD8D5BBE /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */,
+				0C54B727F8E54EE8880F2A38 /* Pods_FindMyStarbucksTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3892E63F23A1F0D1009861F8 /* FindMyStarbucks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3892E66A23A1F0D5009861F8 /* Build configuration list for PBXNativeTarget "FindMyStarbucks" */;
+			buildPhases = (
+				7A38CAB2E175627BC545C2AA /* [CP] Check Pods Manifest.lock */,
+				3892E63C23A1F0D1009861F8 /* Sources */,
+				3892E63D23A1F0D1009861F8 /* Frameworks */,
+				3892E63E23A1F0D1009861F8 /* Resources */,
+				B02E0F45EA9206E0358E06BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindMyStarbucks;
+			productName = FindMyStarbucks;
+			productReference = 3892E64023A1F0D1009861F8 /* FindMyStarbucks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3892E65523A1F0D5009861F8 /* FindMyStarbucksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3892E66D23A1F0D5009861F8 /* Build configuration list for PBXNativeTarget "FindMyStarbucksTests" */;
+			buildPhases = (
+				9DE0C632AEA48374B5D8070C /* [CP] Check Pods Manifest.lock */,
+				3892E65223A1F0D5009861F8 /* Sources */,
+				3892E65323A1F0D5009861F8 /* Frameworks */,
+				3892E65423A1F0D5009861F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3892E65823A1F0D5009861F8 /* PBXTargetDependency */,
+			);
+			name = FindMyStarbucksTests;
+			productName = FindMyStarbucksTests;
+			productReference = 3892E65623A1F0D5009861F8 /* FindMyStarbucksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3892E66023A1F0D5009861F8 /* FindMyStarbucksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3892E67023A1F0D5009861F8 /* Build configuration list for PBXNativeTarget "FindMyStarbucksUITests" */;
+			buildPhases = (
+				EE8F450147B1F922B932BA6F /* [CP] Check Pods Manifest.lock */,
+				3892E65D23A1F0D5009861F8 /* Sources */,
+				3892E65E23A1F0D5009861F8 /* Frameworks */,
+				3892E65F23A1F0D5009861F8 /* Resources */,
+				AD050E9BF57EBAFDABC89AE7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3892E66323A1F0D5009861F8 /* PBXTargetDependency */,
+			);
+			name = FindMyStarbucksUITests;
+			productName = FindMyStarbucksUITests;
+			productReference = 3892E66123A1F0D5009861F8 /* FindMyStarbucksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3892E63823A1F0D1009861F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Salma;
+				TargetAttributes = {
+					3892E63F23A1F0D1009861F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					3892E65523A1F0D5009861F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3892E63F23A1F0D1009861F8;
+					};
+					3892E66023A1F0D5009861F8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 3892E63F23A1F0D1009861F8;
+					};
+				};
+			};
+			buildConfigurationList = 3892E63B23A1F0D1009861F8 /* Build configuration list for PBXProject "FindMyStarbucks" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3892E63723A1F0D1009861F8;
+			productRefGroup = 3892E64123A1F0D1009861F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3892E63F23A1F0D1009861F8 /* FindMyStarbucks */,
+				3892E65523A1F0D5009861F8 /* FindMyStarbucksTests */,
+				3892E66023A1F0D5009861F8 /* FindMyStarbucksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3892E63E23A1F0D1009861F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3892E65023A1F0D5009861F8 /* LaunchScreen.storyboard in Resources */,
+				3892E64D23A1F0D5009861F8 /* Assets.xcassets in Resources */,
+				3892E64B23A1F0D1009861F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3892E65423A1F0D5009861F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3892E65F23A1F0D5009861F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A38CAB2E175627BC545C2AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyStarbucks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DE0C632AEA48374B5D8070C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyStarbucksTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD050E9BF57EBAFDABC89AE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B02E0F45EA9206E0358E06BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE8F450147B1F922B932BA6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FindMyStarbucks-FindMyStarbucksUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3892E63C23A1F0D1009861F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3892E64823A1F0D1009861F8 /* ViewController.swift in Sources */,
+				3892E64423A1F0D1009861F8 /* AppDelegate.swift in Sources */,
+				38CB160423A2AE1D004FAE2E /* GoogleData.swift in Sources */,
+				38CB160823A2B413004FAE2E /* GoogleApiKey.swift in Sources */,
+				3892E64623A1F0D1009861F8 /* SceneDelegate.swift in Sources */,
+				38CB160623A2AF59004FAE2E /* Place.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3892E65223A1F0D5009861F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3892E65B23A1F0D5009861F8 /* FindMyStarbucksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3892E65D23A1F0D5009861F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3892E66623A1F0D5009861F8 /* FindMyStarbucksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3892E65823A1F0D5009861F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3892E63F23A1F0D1009861F8 /* FindMyStarbucks */;
+			targetProxy = 3892E65723A1F0D5009861F8 /* PBXContainerItemProxy */;
+		};
+		3892E66323A1F0D5009861F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3892E63F23A1F0D1009861F8 /* FindMyStarbucks */;
+			targetProxy = 3892E66223A1F0D5009861F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3892E64923A1F0D1009861F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3892E64A23A1F0D1009861F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3892E64E23A1F0D5009861F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3892E64F23A1F0D5009861F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3892E66823A1F0D5009861F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3892E66923A1F0D5009861F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3892E66B23A1F0D5009861F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07240955FAE64D5FF94637DF /* Pods-FindMyStarbucks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyStarbucks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MCS.FindMyStarbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3892E66C23A1F0D5009861F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C15CA6A800345722656F9F /* Pods-FindMyStarbucks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyStarbucks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MCS.FindMyStarbucks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3892E66E23A1F0D5009861F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AA4229B0D065178FFB9E6AA /* Pods-FindMyStarbucksTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyStarbucksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MCS.FindMyStarbucksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyStarbucks.app/FindMyStarbucks";
+			};
+			name = Debug;
+		};
+		3892E66F23A1F0D5009861F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD55228EAA04B727CDF5B90B /* Pods-FindMyStarbucksTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyStarbucksTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MCS.FindMyStarbucksTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindMyStarbucks.app/FindMyStarbucks";
+			};
+			name = Release;
+		};
+		3892E67123A1F0D5009861F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D68FD9AEA4E48391A10A5B4F /* Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyStarbucksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MCS.FindMyStarbucksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyStarbucks;
+			};
+			name = Debug;
+		};
+		3892E67223A1F0D5009861F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F9D49E938C364793A2492E4 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FindMyStarbucksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MCS.FindMyStarbucksUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindMyStarbucks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3892E63B23A1F0D1009861F8 /* Build configuration list for PBXProject "FindMyStarbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3892E66823A1F0D5009861F8 /* Debug */,
+				3892E66923A1F0D5009861F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3892E66A23A1F0D5009861F8 /* Build configuration list for PBXNativeTarget "FindMyStarbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3892E66B23A1F0D5009861F8 /* Debug */,
+				3892E66C23A1F0D5009861F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3892E66D23A1F0D5009861F8 /* Build configuration list for PBXNativeTarget "FindMyStarbucksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3892E66E23A1F0D5009861F8 /* Debug */,
+				3892E66F23A1F0D5009861F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3892E67023A1F0D5009861F8 /* Build configuration list for PBXNativeTarget "FindMyStarbucksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3892E67123A1F0D5009861F8 /* Debug */,
+				3892E67223A1F0D5009861F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3892E63823A1F0D1009861F8 /* Project object */;
+}
