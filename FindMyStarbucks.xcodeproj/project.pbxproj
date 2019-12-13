@@ -15,7 +15,7 @@
 		3892E65023A1F0D5009861F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3892E64E23A1F0D5009861F8 /* LaunchScreen.storyboard */; };
 		3892E65B23A1F0D5009861F8 /* FindMyStarbucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E65A23A1F0D5009861F8 /* FindMyStarbucksTests.swift */; };
 		3892E66623A1F0D5009861F8 /* FindMyStarbucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */; };
-		38CB160823A2B413004FAE2E /* GoogleApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160723A2B412004FAE2E /* GoogleApiKey.swift */; };
+		38CB160823A2B413004FAE2E /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160723A2B412004FAE2E /* ApiKeys.swift */; };
 		38CB16C823A31A98004FAE2E /* YelpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB16C723A31A98004FAE2E /* YelpParser.swift */; };
 		38CB16CA23A31E4F004FAE2E /* YelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB16C923A31E4F004FAE2E /* YelpData.swift */; };
 		40BFC81DB9B5DA6B08703F8F /* Pods_FindMyStarbucks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052450E48975ED9B2CB6BAFE /* Pods_FindMyStarbucks.framework */; };
@@ -60,7 +60,7 @@
 		3892E66123A1F0D5009861F8 /* FindMyStarbucksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindMyStarbucksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarbucksUITests.swift; sourceTree = "<group>"; };
 		3892E66723A1F0D5009861F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38CB160723A2B412004FAE2E /* GoogleApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleApiKey.swift; sourceTree = "<group>"; };
+		38CB160723A2B412004FAE2E /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		38CB16C723A31A98004FAE2E /* YelpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpParser.swift; sourceTree = "<group>"; };
 		38CB16C923A31E4F004FAE2E /* YelpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpData.swift; sourceTree = "<group>"; };
 		39C15CA6A800345722656F9F /* Pods-FindMyStarbucks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 				3892E64723A1F0D1009861F8 /* ViewController.swift */,
 				38CB16C923A31E4F004FAE2E /* YelpData.swift */,
 				38CB16C723A31A98004FAE2E /* YelpParser.swift */,
-				38CB160723A2B412004FAE2E /* GoogleApiKey.swift */,
+				38CB160723A2B412004FAE2E /* ApiKeys.swift */,
 				3892E64923A1F0D1009861F8 /* Main.storyboard */,
 				3892E64C23A1F0D5009861F8 /* Assets.xcassets */,
 				3892E64E23A1F0D5009861F8 /* LaunchScreen.storyboard */,
@@ -418,7 +418,7 @@
 			files = (
 				3892E64823A1F0D1009861F8 /* ViewController.swift in Sources */,
 				3892E64423A1F0D1009861F8 /* AppDelegate.swift in Sources */,
-				38CB160823A2B413004FAE2E /* GoogleApiKey.swift in Sources */,
+				38CB160823A2B413004FAE2E /* ApiKeys.swift in Sources */,
 				3892E64623A1F0D1009861F8 /* SceneDelegate.swift in Sources */,
 				38CB16CA23A31E4F004FAE2E /* YelpData.swift in Sources */,
 				38CB16C823A31A98004FAE2E /* YelpParser.swift in Sources */,

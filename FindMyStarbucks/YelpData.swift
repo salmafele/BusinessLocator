@@ -9,15 +9,15 @@
 import Foundation
 
 struct YelpData: Codable {
-    var businesses: [String]
+    var businesses: [Business]
 }
 
-    struct Business: Codable {
-        var name: String?
-        var coordinates: Coordinates
-    }
+struct Business: Codable {
+    var name: String?
+    var coordinates: Coordinates?
+}
 
-        struct Coordinates: Codable {
-            var latitude: Double?
-            var langitude: Double?
-        }
+struct Coordinates: Codable {
+    var latitude: Double?
+    var longitude: Double?
+}

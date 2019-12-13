@@ -8,45 +8,92 @@
 
 import UIKit
 import GoogleMaps
+
+
+//marker.position = CLLocationCoordinate2D(latitude: 40.0026767, longitude: -75.2581151)
+
+
+class ViewController: UIViewController, GMSMapViewDelegate {
+
+    var mapView: GMSMapView?
         
-class ViewController: UIViewController {
+    var phily = [
+        "lat": 40.0026767,
+        "lon": -75.2581151
+    ]
+    var seatle = [
+        "lat": 47.603,
+        "lon": -122.331
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let camera = GMSCameraPosition.camera(withLatitude: 40.0026767, longitude: -75.2581151, zoom: 10.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        let camera = GMSCameraPosition.camera(withLatitude: phily["lat"]! , longitude: phily["lon"]!, zoom: 12.0)
+        
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        
+        mapView?.isTrafficEnabled = true
+        mapView?.mapType = .normal
+        mapView?.delegate = self
+        
         view = mapView
+
+        setMarker(title: "Phily", latitude: 40.0026767, longitude: -75.2581151)
+        loadMcDonalds()
+
+    }
+
+    func setMarker(title: String, latitude: Double, longitude: Double) {
 
         // Creates a marker in the center of the map.
         let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 40.0026767, longitude: -75.2581151)
-        marker.title = "Philadelphia"
+        marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        marker.title = title
         marker.snippet = "Pensylvania"
         marker.map = mapView
 
-        mapView.isTrafficEnabled = true
-        mapView.mapType = .normal
-
-        view = mapView
-        
-        loadMcDonalds()
     }
-    
+
     func loadMcDonalds() {
 
         guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=mcdonalds&latitude=40.0026767&longitude=-75.2581151") else { return }
 
         var request = URLRequest(url: url)
-        
-        request.addValue("Bearer jhzPe8Pyf0-uMZE1zvM3ROUZBq8Z7vauFTSxf1TbwlZOcPUHCRjDA9zksocZ67RUc_BdE9a0Fy8jynh9ZuNn3p0To7zC_ecf6ZiyIWWujq0LTYGGa5QSfII1FNryXXYx", forHTTPHeaderField: "Authorization")
-        
+
+        request.addValue(ApiKeys.yelpApiKey, forHTTPHeaderField: "Authorization")
+
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
 
             guard let data = data else { return }
 
             print ("Data: \(String(bytes: data, encoding: .utf8)!)")
-            
+
+
+
+            let yelpParser = YelpParser()
+            yelpParser.parse(data: data) { (yelpData) in
+                
+                for business in yelpData.businesses {
+                    
+                    guard let name = business.name else {
+                        continue
+                    }
+                    
+                    guard let lat = business.coordinates?.latitude else {
+                        continue
+                    }
+                    
+                    guard let lon = business.coordinates?.longitude else {
+                        continue
+                    }
+                    
+                    DispatchQueue.main.async {
+                        self.setMarker(title: name, latitude: lat, longitude: lon)
+                    }
+                }
+
+            }
         }
         task.resume()
     }
