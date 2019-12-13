@@ -46,7 +46,7 @@ class ViewController: UIViewController {
             guard let data = data else { return }
 
             print ("Data: \(String(bytes: data, encoding: .utf8)!)")
-
+            
         }
         task.resume()
     }

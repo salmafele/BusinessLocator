@@ -1,0 +1,1403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 480B55FE3ACCAC83A30949D59053CFBD /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BB314D9FD28F9EE0C76AA2ABD22FC78D /* PBXTargetDependency */,
+			);
+			name = GooglePlaces;
+		};
+		885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B4C19445312324B2FC829685DE007C84 /* Build configuration list for PBXAggregateTarget "GooglePlacePicker" */;
+			buildPhases = (
+			);
+			dependencies = (
+				C33B0DAEEBDCDD75F9AF79C9332DEC43 /* PBXTargetDependency */,
+				B5BD3C53A125FD91ACDBEBEDB9843C99 /* PBXTargetDependency */,
+			);
+			name = GooglePlacePicker;
+		};
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		060CCB443193266CB7EAC78BB1BE2047 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E805BCD9734735DA210056CE3A41634C /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		292CE6F17CF26A1441D4B0EB87C55D43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B10BEA2E76259211AC4D43D919A7F81 /* SwiftyJSON-dummy.m */; };
+		3C50511E54A1C8C4D64073E378A342EF /* Pods-FindMyStarbucks-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F1A1DC0F4E106A4C21C407696DA8BC /* Pods-FindMyStarbucks-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA15C90D938A7B0C4D04070C3BF6B38 /* SwiftyJSON.swift */; };
+		7F54FA080F9483FDD3059D74EA036DE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		800E04E006DF41F033955018CB075187 /* Pods-FindMyStarbucksTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C761755C8DD32EAFF3F624817EBADB /* Pods-FindMyStarbucksTests-dummy.m */; };
+		A1E62F4AC67821F612317418201A1CE1 /* Pods-FindMyStarbucksTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D14C3EEA70A8173D24950688176686 /* Pods-FindMyStarbucksTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE9821511F623EE4EF3BF37A28DFB432 /* Pods-FindMyStarbucks-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED04E1E0664C2C470A72019B15111533 /* Pods-FindMyStarbucks-dummy.m */; };
+		D85481CF1EBCD10C3A6A5FB1EC715BE1 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C41BDA57EA7045156EFB604BC54B4FB /* Pods-FindMyStarbucks-FindMyStarbucksUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC10E9829D966C102A76B2F1980BA9B8 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F5ABD807405917B03E2C2F916699DF /* Pods-FindMyStarbucks-FindMyStarbucksUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0743B5B3222D545B89FFB10727A38767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		33F302AB6252FA1CFC71DD40A5F11EAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885917490BC3F1DF8613D63A80B4E196;
+			remoteInfo = GooglePlacePicker;
+		};
+		35E69D0E4CDC23656657C72CBC0D50F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		44915583C8AAB453CB2B8C11E6512027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		63942DEAD16732B6B1D87263545908AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		821AA14964111CCAD3309615E3D31330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		AF78E16B130586990295979E295A5FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		B1BF6B1A470B14E336A84ACC1E3D53AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		C12BA5A514402330A5206D504F293C2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1DEE46696460D4CCA88DC0A42BCEB8;
+			remoteInfo = "Pods-FindMyStarbucks";
+		};
+		CE4FCD0B1D15ED5ED2C8AEA890EDFCFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885917490BC3F1DF8613D63A80B4E196;
+			remoteInfo = GooglePlacePicker;
+		};
+		DB32E74C91B4C711DC0B0CE5A18D8A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		E4E8A211B4846AF465BD225BAB608888 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		021870E65BF03A33CD6D829FBBB5B81D /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		08A8E8233EB939511DCCA493154B1A7A /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		08F634D2C440B646B6ADEE9D20C8C40E /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B10BEA2E76259211AC4D43D919A7F81 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		1EFDE2BE44027D370879F8326BF8496C /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		1FA15C90D938A7B0C4D04070C3BF6B38 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		32A5D052CB68A359BC8A01EA72068491 /* Pods-FindMyStarbucks.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindMyStarbucks.modulemap"; sourceTree = "<group>"; };
+		44C6CBFFB50BB7E034988623D205EE72 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-resources.sh"; sourceTree = "<group>"; };
+		48D5FA34A083F65C70D12907E8EFA940 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		53E44B89FFF14C51B146ECF6B17F2BD4 /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FindMyStarbucks_FindMyStarbucksUITests.framework; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5619CD3D94200FCDBB581E840C1B66E0 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		5B8F38859C09742CFC6322FB9074F9F6 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6623672CF6905433CB1EAD2D6C4EE5EE /* GooglePlaces.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.xcconfig; sourceTree = "<group>"; };
+		67A2F22C21A03340BFAC6A11554819EE /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		720B3EBEC5CE71B274F20D18925D7D95 /* Pods-FindMyStarbucks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyStarbucks.release.xcconfig"; sourceTree = "<group>"; };
+		751EC255EC59EA495D4D2F0965925D42 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests.modulemap"; sourceTree = "<group>"; };
+		762A5F152320D58582428C4156A6D811 /* Pods-FindMyStarbucksTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyStarbucksTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		79A93E0553900FBFC61339EE9892BBF1 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		7B205DA447AB1E0783D1252EB70CF5A5 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7F18AB7CB7A409E1A7341C51A827D4BB /* Pods-FindMyStarbucksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyStarbucksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		805C3CEF502F97D82B635DBFB58A014A /* Pods-FindMyStarbucks-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FindMyStarbucks-frameworks.sh"; sourceTree = "<group>"; };
+		85A95590BA3C9DCDE353530D6469A70E /* Pods-FindMyStarbucks-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyStarbucks-Info.plist"; sourceTree = "<group>"; };
+		86770BAF582106ACCDD8B78222F7B8BE /* Pods-FindMyStarbucksTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindMyStarbucksTests.modulemap"; sourceTree = "<group>"; };
+		88A98D23919C5C50461B012E4A969798 /* Pods-FindMyStarbucksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyStarbucksTests.release.xcconfig"; sourceTree = "<group>"; };
+		97D955AD4631CA5D18120B9BD8CFB665 /* Pods-FindMyStarbucksTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindMyStarbucksTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		99E4567A9F3A8E113D36FB54514EA373 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		9BDD2D5376FDFA544D1968CF8E85FE38 /* GooglePlacePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlacePicker.xcconfig; sourceTree = "<group>"; };
+		9C2B23E417C5746FDE072BADC0574868 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9C41BDA57EA7045156EFB604BC54B4FB /* Pods-FindMyStarbucks-FindMyStarbucksUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E1953E61E2E7F0996A7D3E7F5DD2118 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-Info.plist"; sourceTree = "<group>"; };
+		A500DCFCD3440838916C7D90F31BB2F8 /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		AB648ADF47C52BAFEA99EE8E64F0600C /* Pods-FindMyStarbucks-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyStarbucks-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB8AC34A39D774E0F3E3CA9EE096AE78 /* Pods_FindMyStarbucksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FindMyStarbucksTests.framework; path = "Pods-FindMyStarbucksTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5FFD044021904EBD1F650E38E1021B /* Pods-FindMyStarbucks-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindMyStarbucks-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B1D556DDC26EF94F706D8F4CA749C3EE /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		BFFD4BE7D7F2D7F13AB68C5E017FC667 /* Pods_FindMyStarbucks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FindMyStarbucks.framework; path = "Pods-FindMyStarbucks.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D14C3EEA70A8173D24950688176686 /* Pods-FindMyStarbucksTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindMyStarbucksTests-umbrella.h"; sourceTree = "<group>"; };
+		D1C5EE397E610EF939B79AD895B3D5C2 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		D4F5ABD807405917B03E2C2F916699DF /* Pods-FindMyStarbucks-FindMyStarbucksUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-dummy.m"; sourceTree = "<group>"; };
+		D5C761755C8DD32EAFF3F624817EBADB /* Pods-FindMyStarbucksTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindMyStarbucksTests-dummy.m"; sourceTree = "<group>"; };
+		D5C8969C0A4A1B2135A5377E9BC6EE05 /* Pods-FindMyStarbucks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindMyStarbucks.debug.xcconfig"; sourceTree = "<group>"; };
+		D7E2A2E716C1CE2BD447838D5B8BA68B /* Pods-FindMyStarbucksTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyStarbucksTests-Info.plist"; sourceTree = "<group>"; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E805BCD9734735DA210056CE3A41634C /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		ED04E1E0664C2C470A72019B15111533 /* Pods-FindMyStarbucks-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindMyStarbucks-dummy.m"; sourceTree = "<group>"; };
+		F11ADE9ECB329AAFF33EAA27EE71A7C1 /* Pods-FindMyStarbucks-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FindMyStarbucks-resources.sh"; sourceTree = "<group>"; };
+		F1E7A02F4048B8DB530C979D8767B357 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindMyStarbucks-FindMyStarbucksUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6F1A1DC0F4E106A4C21C407696DA8BC /* Pods-FindMyStarbucks-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindMyStarbucks-umbrella.h"; sourceTree = "<group>"; };
+		FDCF2A5BF293361599774E9E1EBF0373 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		FE07B4FF72F09E4F25DA8BA882EE8C77 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3678431589306701DBF9C8A7F1B6A50E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F54FA080F9483FDD3059D74EA036DE1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A433D15EA85793360553597F4C24B84E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292CE6F17CF26A1441D4B0EB87C55D43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D270A3D49147F513A3A6479DAD191C5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				060CCB443193266CB7EAC78BB1BE2047 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		004EE9B4427DB82ED6C0A6642B3D81D5 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				1FA15C90D938A7B0C4D04070C3BF6B38 /* SwiftyJSON.swift */,
+				5F97A241ACD12C3E2AC28647AB0E33E1 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		0217DE2B97185BECDF73882861ADA433 /* Pods-FindMyStarbucks-FindMyStarbucksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				751EC255EC59EA495D4D2F0965925D42 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.modulemap */,
+				9C2B23E417C5746FDE072BADC0574868 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-acknowledgements.markdown */,
+				F1E7A02F4048B8DB530C979D8767B357 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-acknowledgements.plist */,
+				D4F5ABD807405917B03E2C2F916699DF /* Pods-FindMyStarbucks-FindMyStarbucksUITests-dummy.m */,
+				7B205DA447AB1E0783D1252EB70CF5A5 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-frameworks.sh */,
+				9E1953E61E2E7F0996A7D3E7F5DD2118 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-Info.plist */,
+				44C6CBFFB50BB7E034988623D205EE72 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-resources.sh */,
+				9C41BDA57EA7045156EFB604BC54B4FB /* Pods-FindMyStarbucks-FindMyStarbucksUITests-umbrella.h */,
+				5B8F38859C09742CFC6322FB9074F9F6 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig */,
+				08F634D2C440B646B6ADEE9D20C8C40E /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */,
+			);
+			name = "Pods-FindMyStarbucks-FindMyStarbucksUITests";
+			path = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests";
+			sourceTree = "<group>";
+		};
+		1927683BCE95D7D277ABF12D0C4EFCC5 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				6AF0518AA7946D256751F1999B34D929 /* Frameworks */,
+				7A0BDDAFDB17888FC32953E6C4849258 /* Resources */,
+				E9B43FBEFB169A43D5213D122AF0106F /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		2198E312F4C88C33092654E7E05EC430 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				A2A195B7D4D5E894884EFA5034851354 /* Base */,
+				D20AB20C73296608E47E2B7DF255B05E /* Maps */,
+				C5D88973F3D2C5A0B4C21F0D3749ABC2 /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		455E5B6FA541F6C7C5A73336745B4BCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08A8E8233EB939511DCCA493154B1A7A /* GooglePlacePicker.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4596970B8549CE1E293CEF082ED3B399 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BDD2D5376FDFA544D1968CF8E85FE38 /* GooglePlacePicker.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlacePicker";
+			sourceTree = "<group>";
+		};
+		4D071B2DE1A70299C87FC4CE92539879 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2198E312F4C88C33092654E7E05EC430 /* GoogleMaps */,
+				A2F78B8B5378BD923DDAC66B6F77A8AE /* GooglePlacePicker */,
+				1927683BCE95D7D277ABF12D0C4EFCC5 /* GooglePlaces */,
+				004EE9B4427DB82ED6C0A6642B3D81D5 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		58782C832496584B8EF32F213A3C1960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48D5FA34A083F65C70D12907E8EFA940 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F97A241ACD12C3E2AC28647AB0E33E1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99E4567A9F3A8E113D36FB54514EA373 /* SwiftyJSON.modulemap */,
+				021870E65BF03A33CD6D829FBBB5B81D /* SwiftyJSON.xcconfig */,
+				1B10BEA2E76259211AC4D43D919A7F81 /* SwiftyJSON-dummy.m */,
+				FE07B4FF72F09E4F25DA8BA882EE8C77 /* SwiftyJSON-Info.plist */,
+				D1C5EE397E610EF939B79AD895B3D5C2 /* SwiftyJSON-prefix.pch */,
+				E805BCD9734735DA210056CE3A41634C /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		6AF0518AA7946D256751F1999B34D929 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5619CD3D94200FCDBB581E840C1B66E0 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A0BDDAFDB17888FC32953E6C4849258 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79A93E0553900FBFC61339EE9892BBF1 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		885D1D85F9B13ADD0ABD1BEF3DDE1120 /* Pods-FindMyStarbucks */ = {
+			isa = PBXGroup;
+			children = (
+				32A5D052CB68A359BC8A01EA72068491 /* Pods-FindMyStarbucks.modulemap */,
+				AD5FFD044021904EBD1F650E38E1021B /* Pods-FindMyStarbucks-acknowledgements.markdown */,
+				AB648ADF47C52BAFEA99EE8E64F0600C /* Pods-FindMyStarbucks-acknowledgements.plist */,
+				ED04E1E0664C2C470A72019B15111533 /* Pods-FindMyStarbucks-dummy.m */,
+				805C3CEF502F97D82B635DBFB58A014A /* Pods-FindMyStarbucks-frameworks.sh */,
+				85A95590BA3C9DCDE353530D6469A70E /* Pods-FindMyStarbucks-Info.plist */,
+				F11ADE9ECB329AAFF33EAA27EE71A7C1 /* Pods-FindMyStarbucks-resources.sh */,
+				F6F1A1DC0F4E106A4C21C407696DA8BC /* Pods-FindMyStarbucks-umbrella.h */,
+				D5C8969C0A4A1B2135A5377E9BC6EE05 /* Pods-FindMyStarbucks.debug.xcconfig */,
+				720B3EBEC5CE71B274F20D18925D7D95 /* Pods-FindMyStarbucks.release.xcconfig */,
+			);
+			name = "Pods-FindMyStarbucks";
+			path = "Target Support Files/Pods-FindMyStarbucks";
+			sourceTree = "<group>";
+		};
+		9B0D64E15C85664F9CC47EC093782C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67A2F22C21A03340BFAC6A11554819EE /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2A195B7D4D5E894884EFA5034851354 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				58782C832496584B8EF32F213A3C1960 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		A2F78B8B5378BD923DDAC66B6F77A8AE /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				9B0D64E15C85664F9CC47EC093782C8A /* Frameworks */,
+				455E5B6FA541F6C7C5A73336745B4BCC /* Resources */,
+				4596970B8549CE1E293CEF082ED3B399 /* Support Files */,
+			);
+			name = GooglePlacePicker;
+			path = GooglePlacePicker;
+			sourceTree = "<group>";
+		};
+		ACA55F9BFCAC27762DBEB255A0B53932 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				885D1D85F9B13ADD0ABD1BEF3DDE1120 /* Pods-FindMyStarbucks */,
+				0217DE2B97185BECDF73882861ADA433 /* Pods-FindMyStarbucks-FindMyStarbucksUITests */,
+				D4AFAC7EDB7D9D7C47B4A02BDD3E38FE /* Pods-FindMyStarbucksTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C50D10CB7B922EFEE94682CE0731D215 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDCF2A5BF293361599774E9E1EBF0373 /* GoogleMaps.framework */,
+				1EFDE2BE44027D370879F8326BF8496C /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D88973F3D2C5A0B4C21F0D3749ABC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A500DCFCD3440838916C7D90F31BB2F8 /* GoogleMaps.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		C9F5A7721A4495C74BF72E6474204F9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFFD4BE7D7F2D7F13AB68C5E017FC667 /* Pods_FindMyStarbucks.framework */,
+				53E44B89FFF14C51B146ECF6B17F2BD4 /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */,
+				AB8AC34A39D774E0F3E3CA9EE096AE78 /* Pods_FindMyStarbucksTests.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				4D071B2DE1A70299C87FC4CE92539879 /* Pods */,
+				C9F5A7721A4495C74BF72E6474204F9A /* Products */,
+				ACA55F9BFCAC27762DBEB255A0B53932 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D20AB20C73296608E47E2B7DF255B05E /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				C50D10CB7B922EFEE94682CE0731D215 /* Frameworks */,
+				ED657EB0BA0C384DA20CCA72F7C966C2 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4AFAC7EDB7D9D7C47B4A02BDD3E38FE /* Pods-FindMyStarbucksTests */ = {
+			isa = PBXGroup;
+			children = (
+				86770BAF582106ACCDD8B78222F7B8BE /* Pods-FindMyStarbucksTests.modulemap */,
+				97D955AD4631CA5D18120B9BD8CFB665 /* Pods-FindMyStarbucksTests-acknowledgements.markdown */,
+				762A5F152320D58582428C4156A6D811 /* Pods-FindMyStarbucksTests-acknowledgements.plist */,
+				D5C761755C8DD32EAFF3F624817EBADB /* Pods-FindMyStarbucksTests-dummy.m */,
+				D7E2A2E716C1CE2BD447838D5B8BA68B /* Pods-FindMyStarbucksTests-Info.plist */,
+				C6D14C3EEA70A8173D24950688176686 /* Pods-FindMyStarbucksTests-umbrella.h */,
+				7F18AB7CB7A409E1A7341C51A827D4BB /* Pods-FindMyStarbucksTests.debug.xcconfig */,
+				88A98D23919C5C50461B012E4A969798 /* Pods-FindMyStarbucksTests.release.xcconfig */,
+			);
+			name = "Pods-FindMyStarbucksTests";
+			path = "Target Support Files/Pods-FindMyStarbucksTests";
+			sourceTree = "<group>";
+		};
+		E9B43FBEFB169A43D5213D122AF0106F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6623672CF6905433CB1EAD2D6C4EE5EE /* GooglePlaces.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		ED657EB0BA0C384DA20CCA72F7C966C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1D556DDC26EF94F706D8F4CA749C3EE /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442F629D7FBDB7BEDCD42D35D467B9DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1E62F4AC67821F612317418201A1CE1 /* Pods-FindMyStarbucksTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5190C22CB0A8CA44E18091E0D6AE5239 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85481CF1EBCD10C3A6A5FB1EC715BE1 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91D17B13E6919746C97DE8E6AA49E329 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C50511E54A1C8C4D64073E378A342EF /* Pods-FindMyStarbucks-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1273B89D2B651D5A960D89EAFB7357B3 /* Pods-FindMyStarbucks-FindMyStarbucksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9DF7A81B937EC19252E8A58B8439385 /* Build configuration list for PBXNativeTarget "Pods-FindMyStarbucks-FindMyStarbucksUITests" */;
+			buildPhases = (
+				5190C22CB0A8CA44E18091E0D6AE5239 /* Headers */,
+				5CE7C71AC719498B21019AD3295B2474 /* Sources */,
+				D270A3D49147F513A3A6479DAD191C5D /* Frameworks */,
+				EDA8F447AE98313B80B5405FCA3FA812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57510D79302D39E86CBBE0D27D6284AC /* PBXTargetDependency */,
+				3C79E8485065B2BFF78598E5E1EE8C3A /* PBXTargetDependency */,
+				7BADBC7E2317C2D22B34B364D1A17427 /* PBXTargetDependency */,
+				3DB09770AA8B7D32386B7EE4C0785BFB /* PBXTargetDependency */,
+			);
+			name = "Pods-FindMyStarbucks-FindMyStarbucksUITests";
+			productName = "Pods-FindMyStarbucks-FindMyStarbucksUITests";
+			productReference = 53E44B89FFF14C51B146ECF6B17F2BD4 /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B0A8C4B15DF8E9D95240AC8E4788A636 /* Pods-FindMyStarbucksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4107E11343A7BE1ED9ED783B58A96E49 /* Build configuration list for PBXNativeTarget "Pods-FindMyStarbucksTests" */;
+			buildPhases = (
+				442F629D7FBDB7BEDCD42D35D467B9DA /* Headers */,
+				F67C295ECDD3DC3924EC1D8FD801C8DB /* Sources */,
+				A433D15EA85793360553597F4C24B84E /* Frameworks */,
+				8C952946A8A86799EB2F19E36FE0098F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BDC880A20F48EDA9F393249E772B344 /* PBXTargetDependency */,
+			);
+			name = "Pods-FindMyStarbucksTests";
+			productName = "Pods-FindMyStarbucksTests";
+			productReference = AB8AC34A39D774E0F3E3CA9EE096AE78 /* Pods_FindMyStarbucksTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA1DEE46696460D4CCA88DC0A42BCEB8 /* Pods-FindMyStarbucks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7573D61D587CBF210D0D0C551670B94B /* Build configuration list for PBXNativeTarget "Pods-FindMyStarbucks" */;
+			buildPhases = (
+				91D17B13E6919746C97DE8E6AA49E329 /* Headers */,
+				25ECEF6665E19CDEDFAE35052059F944 /* Sources */,
+				3678431589306701DBF9C8A7F1B6A50E /* Frameworks */,
+				CAD0F6621DD1FFB2640CFB725F75E025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E9EBD6D2896C34BBCA9E3FBD613E014 /* PBXTargetDependency */,
+				4745A02E17467BE9AF1531C51ED3CA08 /* PBXTargetDependency */,
+				AA55D28482C45D9287FBF9E298FCD358 /* PBXTargetDependency */,
+				3EC23DC77F76B0C7644A75FF27307A93 /* PBXTargetDependency */,
+			);
+			name = "Pods-FindMyStarbucks";
+			productName = "Pods-FindMyStarbucks";
+			productReference = BFFD4BE7D7F2D7F13AB68C5E017FC667 /* Pods_FindMyStarbucks.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */,
+				1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */,
+				AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */,
+				D098F7F0080A87A1F472C81FC2F85528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C9F5A7721A4495C74BF72E6474204F9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */,
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
+				CA1DEE46696460D4CCA88DC0A42BCEB8 /* Pods-FindMyStarbucks */,
+				1273B89D2B651D5A960D89EAFB7357B3 /* Pods-FindMyStarbucks-FindMyStarbucksUITests */,
+				B0A8C4B15DF8E9D95240AC8E4788A636 /* Pods-FindMyStarbucksTests */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C952946A8A86799EB2F19E36FE0098F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD0F6621DD1FFB2640CFB725F75E025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D098F7F0080A87A1F472C81FC2F85528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDA8F447AE98313B80B5405FCA3FA812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
+				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25ECEF6665E19CDEDFAE35052059F944 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9821511F623EE4EF3BF37A28DFB432 /* Pods-FindMyStarbucks-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE7C71AC719498B21019AD3295B2474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC10E9829D966C102A76B2F1980BA9B8 /* Pods-FindMyStarbucks-FindMyStarbucksUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F67C295ECDD3DC3924EC1D8FD801C8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				800E04E006DF41F033955018CB075187 /* Pods-FindMyStarbucksTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E9EBD6D2896C34BBCA9E3FBD613E014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = B1BF6B1A470B14E336A84ACC1E3D53AD /* PBXContainerItemProxy */;
+		};
+		3C79E8485065B2BFF78598E5E1EE8C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlacePicker;
+			target = 885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */;
+			targetProxy = 33F302AB6252FA1CFC71DD40A5F11EAF /* PBXContainerItemProxy */;
+		};
+		3DB09770AA8B7D32386B7EE4C0785BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 0743B5B3222D545B89FFB10727A38767 /* PBXContainerItemProxy */;
+		};
+		3EC23DC77F76B0C7644A75FF27307A93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 821AA14964111CCAD3309615E3D31330 /* PBXContainerItemProxy */;
+		};
+		4745A02E17467BE9AF1531C51ED3CA08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlacePicker;
+			target = 885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */;
+			targetProxy = CE4FCD0B1D15ED5ED2C8AEA890EDFCFC /* PBXContainerItemProxy */;
+		};
+		57510D79302D39E86CBBE0D27D6284AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = AF78E16B130586990295979E295A5FE2 /* PBXContainerItemProxy */;
+		};
+		7BADBC7E2317C2D22B34B364D1A17427 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = E4E8A211B4846AF465BD225BAB608888 /* PBXContainerItemProxy */;
+		};
+		8BDC880A20F48EDA9F393249E772B344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FindMyStarbucks";
+			target = CA1DEE46696460D4CCA88DC0A42BCEB8 /* Pods-FindMyStarbucks */;
+			targetProxy = C12BA5A514402330A5206D504F293C2D /* PBXContainerItemProxy */;
+		};
+		AA55D28482C45D9287FBF9E298FCD358 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 63942DEAD16732B6B1D87263545908AE /* PBXContainerItemProxy */;
+		};
+		B5BD3C53A125FD91ACDBEBEDB9843C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 35E69D0E4CDC23656657C72CBC0D50F5 /* PBXContainerItemProxy */;
+		};
+		BB314D9FD28F9EE0C76AA2ABD22FC78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 44915583C8AAB453CB2B8C11E6512027 /* PBXContainerItemProxy */;
+		};
+		C33B0DAEEBDCDD75F9AF79C9332DEC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = DB32E74C91B4C711DC0B0CE5A18D8A86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0D832BD07697F63AAA4010EF45B17B0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 720B3EBEC5CE71B274F20D18925D7D95 /* Pods-FindMyStarbucks.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		19DE5A0A17CDD1CE7F9794E3A9E5738E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8F38859C09742CFC6322FB9074F9F6 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29586F0B11FE61DB353F0936A9ABA45D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F634D2C440B646B6ADEE9D20C8C40E /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2C1C4625A069FBBE1AA822F8E0C646B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDD2D5376FDFA544D1968CF8E85FE38 /* GooglePlacePicker.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A500DCFCD3440838916C7D90F31BB2F8 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		595DD5539089161955FE3C7084B0C9B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDD2D5376FDFA544D1968CF8E85FE38 /* GooglePlacePicker.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CEFD4A0FF7D85887390E5ED002003D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6623672CF6905433CB1EAD2D6C4EE5EE /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021870E65BF03A33CD6D829FBBB5B81D /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C13B26068752DC08599F59570710AF50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A98D23919C5C50461B012E4A969798 /* Pods-FindMyStarbucksTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A500DCFCD3440838916C7D90F31BB2F8 /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C8B7A5C0A2BC3DC7FEE5F90BE94C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6623672CF6905433CB1EAD2D6C4EE5EE /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 021870E65BF03A33CD6D829FBBB5B81D /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F47F41B453A7123FE3601EF338F69D4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F18AB7CB7A409E1A7341C51A827D4BB /* Pods-FindMyStarbucksTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FED6EDA48B2D93BE3074162EE0F57060 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5C8969C0A4A1B2135A5377E9BC6EE05 /* Pods-FindMyStarbucks.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4107E11343A7BE1ED9ED783B58A96E49 /* Build configuration list for PBXNativeTarget "Pods-FindMyStarbucksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F47F41B453A7123FE3601EF338F69D4B /* Debug */,
+				C13B26068752DC08599F59570710AF50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480B55FE3ACCAC83A30949D59053CFBD /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEFD4A0FF7D85887390E5ED002003D0 /* Debug */,
+				C9C8B7A5C0A2BC3DC7FEE5F90BE94C77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */,
+				6E2226BAF771B9AEEA8FE646C18E7879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7573D61D587CBF210D0D0C551670B94B /* Build configuration list for PBXNativeTarget "Pods-FindMyStarbucks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED6EDA48B2D93BE3074162EE0F57060 /* Debug */,
+				0D832BD07697F63AAA4010EF45B17B0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4C19445312324B2FC829685DE007C84 /* Build configuration list for PBXAggregateTarget "GooglePlacePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595DD5539089161955FE3C7084B0C9B2 /* Debug */,
+				2C1C4625A069FBBE1AA822F8E0C646B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9DF7A81B937EC19252E8A58B8439385 /* Build configuration list for PBXNativeTarget "Pods-FindMyStarbucks-FindMyStarbucksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19DE5A0A17CDD1CE7F9794E3A9E5738E /* Debug */,
+				29586F0B11FE61DB353F0936A9ABA45D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
