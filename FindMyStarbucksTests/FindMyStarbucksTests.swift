@@ -19,16 +19,30 @@ class FindMyStarbucksTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testSearchParser() {
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+         let testBundle = Bundle(for: type(of: self))
+         let filename = "searchPhily"
+         let path = testBundle.path(forResource: filename, ofType: "json")
+         XCTAssertNotNil(path)
+
+         guard let cleanPath = path else { return }
+
+         let url = NSURL.fileURL(withPath: cleanPath)
+
+         do {
+             let data = try Data(contentsOf: url)
+             XCTAssertNotNil(data)
+
+             let parser = YelpParser()
+            parser.parse(data: data) { (yelpData) in
+                print(yelpData.businesses.count)
+                XCTAssertEqual(yelpData.businesses.count, 20, "Expected 20 records, recieved: \(yelpData.businesses.count)")
+                print(yelpData.region.center)
+            }
+         } catch {
+            print ("Error: \(error.localizedDescription)")
         }
-    }
+     }
 
 }

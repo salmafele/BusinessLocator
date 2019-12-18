@@ -9,12 +9,8 @@
 import UIKit
 import GoogleMaps
 
-
-//marker.position = CLLocationCoordinate2D(latitude: 40.0026767, longitude: -75.2581151)
-
-
 class ViewController: UIViewController, GMSMapViewDelegate {
-
+    
     var mapView: GMSMapView?
         
     var phily = [
@@ -40,9 +36,10 @@ class ViewController: UIViewController, GMSMapViewDelegate {
         view = mapView
 
         setMarker(title: "Phily", latitude: 40.0026767, longitude: -75.2581151)
-        loadMcDonalds()
+//        loadBusiness()
 
     }
+
 
     func setMarker(title: String, latitude: Double, longitude: Double) {
 
@@ -55,48 +52,63 @@ class ViewController: UIViewController, GMSMapViewDelegate {
 
     }
 
-    func loadMcDonalds() {
-
-        guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=mcdonalds&latitude=40.0026767&longitude=-75.2581151") else { return }
-
-        var request = URLRequest(url: url)
-
-        request.addValue(ApiKeys.yelpApiKey, forHTTPHeaderField: "Authorization")
-
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-
-            guard let data = data else { return }
-
-            print ("Data: \(String(bytes: data, encoding: .utf8)!)")
-
-
-
-            let yelpParser = YelpParser()
-            yelpParser.parse(data: data) { (yelpData) in
-                
-                for business in yelpData.businesses {
-                    
-                    guard let name = business.name else {
-                        continue
-                    }
-                    
-                    guard let lat = business.coordinates?.latitude else {
-                        continue
-                    }
-                    
-                    guard let lon = business.coordinates?.longitude else {
-                        continue
-                    }
-                    
-                    DispatchQueue.main.async {
-                        self.setMarker(title: name, latitude: lat, longitude: lon)
-                    }
-                }
-
-            }
-        }
-        task.resume()
-    }
+//    func loadBusiness() {
+//
+////        guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=mcdonalds&latitude=40.0026767&longitude=-75.2581151") else { return }
+//
+//    guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=restaurants&location=atlanta") else { return }
+//
+//        var request = URLRequest(url: url)
+//
+//        request.addValue(ApiKeys.yelpApiKey, forHTTPHeaderField: "Authorization")
+//
+//        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+//
+//            guard let data = data else { return }
+//
+//            print ("Data: \(String(bytes: data, encoding: .utf8)!)")
+//
+//
+//
+//            let yelpParser = YelpParser()
+//            yelpParser.parse(data: data) { (yelpData) in
+//
+//                let camera =  GMSCameraPosition.camera(withLatitude: (yelpData.region?.center?.latitude)! , longitude: (yelpData.region?.center?.longitude)!, zoom: 12.0)
+//
+//                DispatchQueue.main.async {
+//
+//                    self.mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+//
+//                    self.view = self.mapView
+//                }
+//
+//
+//                print(yelpData.businesses.count)
+//
+//                for business in yelpData.businesses {
+//
+//                    guard let name = business.name else {
+//                        continue
+//                    }
+//
+//                    guard let lat = business.coordinates?.latitude else {
+//                        continue
+//                    }
+//
+//                    guard let lon = business.coordinates?.longitude else {
+//                        continue
+//                    }
+//                    print ("make marker")
+//                    DispatchQueue.main.async {
+//                        self.setMarker(title: name, latitude: lat, longitude: lon)
+//
+//
+//                    }
+//                }
+//
+//            }
+//        }
+//        task.resume()
+//    }
 
 }
-

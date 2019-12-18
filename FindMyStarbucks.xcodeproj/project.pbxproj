@@ -18,6 +18,9 @@
 		38CB160823A2B413004FAE2E /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160723A2B412004FAE2E /* ApiKeys.swift */; };
 		38CB16C823A31A98004FAE2E /* YelpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB16C723A31A98004FAE2E /* YelpParser.swift */; };
 		38CB16CA23A31E4F004FAE2E /* YelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB16C923A31E4F004FAE2E /* YelpData.swift */; };
+		38E94C6823A851DD0090385B /* searchPhily.json in Resources */ = {isa = PBXBuildFile; fileRef = 38E94C6723A851DC0090385B /* searchPhily.json */; };
+		38E94C6A23A88BC80090385B /* BusinessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E94C6923A88BC80090385B /* BusinessCell.swift */; };
+		38E94C6C23A898560090385B /* LookForBusinesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E94C6B23A898560090385B /* LookForBusinesses.swift */; };
 		40BFC81DB9B5DA6B08703F8F /* Pods_FindMyStarbucks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052450E48975ED9B2CB6BAFE /* Pods_FindMyStarbucks.framework */; };
 		F126F3C26B685DD01FCD74C0 /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C92A17211C3C4C5AD8D5BBE /* Pods_FindMyStarbucks_FindMyStarbucksUITests.framework */; };
 		F3DD8FEAE2666AD66135339B /* Pods_FindMyStarbucksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C54B727F8E54EE8880F2A38 /* Pods_FindMyStarbucksTests.framework */; };
@@ -63,6 +66,9 @@
 		38CB160723A2B412004FAE2E /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		38CB16C723A31A98004FAE2E /* YelpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpParser.swift; sourceTree = "<group>"; };
 		38CB16C923A31E4F004FAE2E /* YelpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpData.swift; sourceTree = "<group>"; };
+		38E94C6723A851DC0090385B /* searchPhily.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = searchPhily.json; path = ../../Assignments/FindMyStarbucks/FindMyStarbucksTests/searchPhily.json; sourceTree = "<group>"; };
+		38E94C6923A88BC80090385B /* BusinessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCell.swift; sourceTree = "<group>"; };
+		38E94C6B23A898560090385B /* LookForBusinesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookForBusinesses.swift; sourceTree = "<group>"; };
 		39C15CA6A800345722656F9F /* Pods-FindMyStarbucks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks/Pods-FindMyStarbucks.release.xcconfig"; sourceTree = "<group>"; };
 		9F9D49E938C364793A2492E4 /* Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucks-FindMyStarbucksUITests/Pods-FindMyStarbucks-FindMyStarbucksUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CD55228EAA04B727CDF5B90B /* Pods-FindMyStarbucksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindMyStarbucksTests.release.xcconfig"; path = "Target Support Files/Pods-FindMyStarbucksTests/Pods-FindMyStarbucksTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +131,8 @@
 				3892E64323A1F0D1009861F8 /* AppDelegate.swift */,
 				3892E64523A1F0D1009861F8 /* SceneDelegate.swift */,
 				3892E64723A1F0D1009861F8 /* ViewController.swift */,
+				38E94C6B23A898560090385B /* LookForBusinesses.swift */,
+				38E94C6923A88BC80090385B /* BusinessCell.swift */,
 				38CB16C923A31E4F004FAE2E /* YelpData.swift */,
 				38CB16C723A31A98004FAE2E /* YelpParser.swift */,
 				38CB160723A2B412004FAE2E /* ApiKeys.swift */,
@@ -140,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				3892E65A23A1F0D5009861F8 /* FindMyStarbucksTests.swift */,
+				38E94C6723A851DC0090385B /* searchPhily.json */,
 				3892E65C23A1F0D5009861F8 /* Info.plist */,
 			);
 			path = FindMyStarbucksTests;
@@ -296,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E94C6823A851DD0090385B /* searchPhily.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +426,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E94C6A23A88BC80090385B /* BusinessCell.swift in Sources */,
 				3892E64823A1F0D1009861F8 /* ViewController.swift in Sources */,
+				38E94C6C23A898560090385B /* LookForBusinesses.swift in Sources */,
 				3892E64423A1F0D1009861F8 /* AppDelegate.swift in Sources */,
 				38CB160823A2B413004FAE2E /* ApiKeys.swift in Sources */,
 				3892E64623A1F0D1009861F8 /* SceneDelegate.swift in Sources */,
