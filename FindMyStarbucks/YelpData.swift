@@ -10,7 +10,7 @@ import Foundation
 
 struct YelpData: Codable {
     var businesses: [Business]
-//    var region: Region?
+    var region: Region?
 }
 
 struct Business: Codable {
@@ -19,9 +19,9 @@ struct Business: Codable {
 //    var image_url: String?
 //    var is_closed: Bool?
 //    var review_count: Int?
-//    var categories: [Categories]?
+    var categories: [Categories]?
 //    var rating: Double?
-//    var price: String?
+    var price: String?
 //    var location: [Location]?
 //    var distance: Double?
 //    var display_phone: String?

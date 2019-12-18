@@ -13,7 +13,7 @@ import UIKit
 class LookForBusinesses: UIViewController {
     
     var businessData = [Business]()
-    var names = ["Salma", "Patrick", "Ryan"]
+//    var names = ["Salma", "Patrick", "Ryan"]
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -82,6 +82,9 @@ extension LookForBusinesses:  UITableViewDataSource, UITableViewDelegate, UISear
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "businessCell") as? BusinessCell else { return UITableViewCell() }
         
         cell.businessName.text = businessData[indexPath.row].name
+        cell.priceLabel.text = businessData[indexPath.row].price
+        cell.businessType.text = businessData[indexPath.row].categories![0].title // category
+        
         
         return cell
     }
@@ -89,6 +92,7 @@ extension LookForBusinesses:  UITableViewDataSource, UITableViewDelegate, UISear
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         // to change every time a char is typed
         loadBusiness(userInput: searchText)
+        
     }
 
 }
