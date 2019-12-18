@@ -6,6 +6,8 @@
 //  Copyright © 2019 Salma. All rights reserved.
 //
 
+//
+
 import UIKit
 
 class LookForBusinesses: UIViewController {
@@ -23,7 +25,7 @@ class LookForBusinesses: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        loadBusiness()
+        
         
 //        func updateSearchResults(for searchController: UISearchController) {
 //            let searchBar = searchController.searchBar
@@ -37,9 +39,9 @@ class LookForBusinesses: UIViewController {
     }
 
     
-    func loadBusiness() {
+    func loadBusiness(userInput: String) {
         
-    guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=restaurants&location=atlanta") else { return }
+        guard let url = URL(string: "https://api.yelp.com/v3/businesses/search?term=\(userInput)&location=atlanta") else { return }
 
         var request = URLRequest(url: url)
 
@@ -78,19 +80,15 @@ extension LookForBusinesses:  UITableViewDataSource, UITableViewDelegate, UISear
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "businessCell") as? BusinessCell else { return UITableViewCell() }
+        
         cell.businessName.text = businessData[indexPath.row].name
         
         return cell
-        
-        
-    }
-
-    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-
     }
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-
+        // to change every time a char is typed
+        loadBusiness(userInput: searchText)
     }
 
 }
