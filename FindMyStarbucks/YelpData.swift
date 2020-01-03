@@ -14,17 +14,18 @@ struct YelpData: Codable {
 }
 
 struct Business: Codable {
-    var name: String?
-//    var coordinates: Coordinates?
-//    var image_url: String?
-//    var is_closed: Bool?
-//    var review_count: Int?
+    var name: String? // works
+    var price: String? // wokrs
     var categories: [Categories]?
+//    var coordinates: Coordinates?
+    var image_url: String?
+//    var is_closed: Bool?
+    var review_count: Int?
 //    var rating: Double?
-    var price: String?
 //    var location: [Location]?
-//    var distance: Double?
-//    var display_phone: String?
+    var distance: Double?
+    var display_phone: String? // works .. not showing in the UI
+    var phone: String?
 }
 
 struct Coordinates: Codable {

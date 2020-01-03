@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--main-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="main" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BusinessLocatorWatch" customModuleProvider="target">
+                    <items>
+                        <imageView width="121" height="115" alignment="center" image="YelpMadeUpLogo" contentMode="scaleAspectFit" id="5Bv-2R-Rn3"/>
+                        <button width="1" alignment="left" title="Find Businesses" id="57c-xc-KCV">
+                            <connections>
+                                <action selector="findPlaces" destination="AgC-eL-Hgc" id="VD0-BZ-XzY"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-188.47826086956522" y="-32.633928571428569"/>
+        </scene>
+        <!--business-->
+        <scene sceneID="D22-eb-Gwb">
+            <objects>
+                <controller identifier="business" id="RfS-Bg-vVs">
+                    <items>
+                        <imageView height="70" alignment="left" id="1Zj-UV-ijn"/>
+                        <group width="1" alignment="left" layout="vertical" id="Ibe-yf-T6S">
+                            <items>
+                                <label width="136" height="33" alignment="left" text="Business Name" id="4Ns-kU-OCg"/>
+                                <label width="136" height="33" alignment="left" text="Category" id="WXb-9W-oO2"/>
+                                <label width="136" height="33" alignment="left" text="Phone" id="TMV-jO-Pnb"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="27.34782608695652" y="-33.392857142857146"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="765" y="1034"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="BusinessLocatorWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="1034"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="BusinessLocatorWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="1013" y="736"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="YelpMadeUpLogo" width="200" height="200"/>
+    </resources>
+</document>

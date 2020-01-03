@@ -8,34 +8,20 @@
 
 import UIKit
 
-    var businessIV: String?
-    var ratingIV: String?
-    var businessName: String?
-    var businessType: String?
-    var distanceType: Double?
-    var reviewsLabel: Int?
-    var statusLabel: String?
-
 class BusinessCell: UITableViewCell {
         
     var myData: YelpData!
     
-    @IBOutlet weak var businessIV: UIImageView!
-    @IBOutlet weak var ratingIV: UIImageView!
-    
     @IBOutlet weak var businessName: UILabel!
     @IBOutlet weak var businessType: UILabel!
     
+    @IBOutlet weak var businessIV: UIImageView!
     @IBOutlet weak var distanceLabel: UILabel!
-    @IBOutlet weak var reviewsLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        
-        
         
     }
 
