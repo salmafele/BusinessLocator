@@ -51,6 +51,10 @@ class DetailViewController: UIViewController {
             getImage.yelpImages(urlString: imageURL, imageView: businessIV)
         }
         
+        businessName.backgroundColor = .yellow
+        
+        
+        print(businessData)
         businessName.text = businessData?.name
         reviews.text = businessData?.review_count?.description
         phoneLabel.text = businessData?.display_phone?.description // buiness phone

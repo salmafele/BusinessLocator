@@ -17,15 +17,9 @@
 		3892E65023A1F0D5009861F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3892E64E23A1F0D5009861F8 /* LaunchScreen.storyboard */; };
 		3892E65B23A1F0D5009861F8 /* FindMyStarbucksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E65A23A1F0D5009861F8 /* FindMyStarbucksTests.swift */; };
 		3892E66623A1F0D5009861F8 /* FindMyStarbucksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */; };
-		389A0DAE23BB2AF1008C46DB /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389A0DAC23BB2AF1008C46DB /* Interface.storyboard */; };
-		389A0DB023BB2AFB008C46DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389A0DAF23BB2AFB008C46DB /* Assets.xcassets */; };
 		389A0DB723BB2AFB008C46DB /* BusinessLocatorWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 389A0DB623BB2AFB008C46DB /* BusinessLocatorWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		389A0DC223BB2AFE008C46DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389A0DC123BB2AFE008C46DB /* Assets.xcassets */; };
 		389A0DC723BB2AFE008C46DB /* BusinessLocatorWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 389A0DAA23BB2AF1008C46DB /* BusinessLocatorWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		389A0DD423BB33E8008C46DB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A0DBF23BB2AFB008C46DB /* NotificationController.swift */; };
-		389A0DD523BB33E8008C46DB /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A0DBD23BB2AFB008C46DB /* ExtensionDelegate.swift */; };
-		389A0DD623BB33E8008C46DB /* FindBusinessesICInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A0DD223BB3223008C46DB /* FindBusinessesICInterfaceController.swift */; };
-		389A0DD723BB33E8008C46DB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A0DBB23BB2AFB008C46DB /* InterfaceController.swift */; };
 		38CB160823A2B413004FAE2E /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB160723A2B412004FAE2E /* ApiKeys.swift */; };
 		38CB16C823A31A98004FAE2E /* YelpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB16C723A31A98004FAE2E /* YelpParser.swift */; };
 		38CB16CA23A31E4F004FAE2E /* YelpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CB16C923A31E4F004FAE2E /* YelpData.swift */; };
@@ -117,17 +111,9 @@
 		3892E66523A1F0D5009861F8 /* FindMyStarbucksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarbucksUITests.swift; sourceTree = "<group>"; };
 		3892E66723A1F0D5009861F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389A0DAA23BB2AF1008C46DB /* BusinessLocatorWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessLocatorWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		389A0DAD23BB2AF1008C46DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		389A0DAF23BB2AFB008C46DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		389A0DB123BB2AFB008C46DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389A0DB623BB2AFB008C46DB /* BusinessLocatorWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BusinessLocatorWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		389A0DBB23BB2AFB008C46DB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		389A0DBD23BB2AFB008C46DB /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		389A0DBF23BB2AFB008C46DB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		389A0DC123BB2AFE008C46DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../BusinessLocatorWatch Extension/Assets.xcassets"; sourceTree = "<group>"; };
 		389A0DC323BB2AFE008C46DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../BusinessLocatorWatch Extension/Info.plist"; sourceTree = "<group>"; };
-		389A0DC423BB2AFE008C46DB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		389A0DD223BB3223008C46DB /* FindBusinessesICInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBusinessesICInterfaceController.swift; sourceTree = "<group>"; };
 		38CB160723A2B412004FAE2E /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		38CB16C723A31A98004FAE2E /* YelpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpParser.swift; sourceTree = "<group>"; };
 		38CB16C923A31E4F004FAE2E /* YelpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpData.swift; sourceTree = "<group>"; };
@@ -182,8 +168,6 @@
 				3892E64223A1F0D1009861F8 /* FindMyStarbucks */,
 				3892E65923A1F0D5009861F8 /* FindMyStarbucksTests */,
 				3892E66423A1F0D5009861F8 /* FindMyStarbucksUITests */,
-				389A0DAB23BB2AF1008C46DB /* BusinessLocatorWatch */,
-				389A0DBA23BB2AFB008C46DB /* BusinessLocatorWatch Extension */,
 				3892E64123A1F0D1009861F8 /* Products */,
 				78AF726B458FD65F4C2DAC9B /* Pods */,
 				801737FD3371E1EA246A4361 /* Frameworks */,
@@ -243,28 +227,6 @@
 				3892E66723A1F0D5009861F8 /* Info.plist */,
 			);
 			path = FindMyStarbucksUITests;
-			sourceTree = "<group>";
-		};
-		389A0DAB23BB2AF1008C46DB /* BusinessLocatorWatch */ = {
-			isa = PBXGroup;
-			children = (
-				389A0DAC23BB2AF1008C46DB /* Interface.storyboard */,
-				389A0DAF23BB2AFB008C46DB /* Assets.xcassets */,
-				389A0DB123BB2AFB008C46DB /* Info.plist */,
-			);
-			path = BusinessLocatorWatch;
-			sourceTree = "<group>";
-		};
-		389A0DBA23BB2AFB008C46DB /* BusinessLocatorWatch Extension */ = {
-			isa = PBXGroup;
-			children = (
-				389A0DBB23BB2AFB008C46DB /* InterfaceController.swift */,
-				389A0DD223BB3223008C46DB /* FindBusinessesICInterfaceController.swift */,
-				389A0DBF23BB2AFB008C46DB /* NotificationController.swift */,
-				389A0DBD23BB2AFB008C46DB /* ExtensionDelegate.swift */,
-				389A0DC423BB2AFE008C46DB /* PushNotificationPayload.apns */,
-			);
-			path = "BusinessLocatorWatch Extension";
 			sourceTree = "<group>";
 		};
 		78AF726B458FD65F4C2DAC9B /* Pods */ = {
@@ -468,8 +430,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389A0DB023BB2AFB008C46DB /* Assets.xcassets in Resources */,
-				389A0DAE23BB2AF1008C46DB /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,16 +551,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389A0DD723BB33E8008C46DB /* InterfaceController.swift in Sources */,
 				38E94C6E23A9F43A0090385B /* DetailViewController.swift in Sources */,
 				3855D30C23ACA9FB004B40BA /* Networking.swift in Sources */,
-				389A0DD623BB33E8008C46DB /* FindBusinessesICInterfaceController.swift in Sources */,
 				38E94C6A23A88BC80090385B /* BusinessCell.swift in Sources */,
-				389A0DD523BB33E8008C46DB /* ExtensionDelegate.swift in Sources */,
 				3892E64823A1F0D1009861F8 /* ViewController.swift in Sources */,
 				38E94C6C23A898560090385B /* LookForBusinesses.swift in Sources */,
 				3892E64423A1F0D1009861F8 /* AppDelegate.swift in Sources */,
-				389A0DD423BB33E8008C46DB /* NotificationController.swift in Sources */,
 				38CB160823A2B413004FAE2E /* ApiKeys.swift in Sources */,
 				3892E64623A1F0D1009861F8 /* SceneDelegate.swift in Sources */,
 				38CB16CA23A31E4F004FAE2E /* YelpData.swift in Sources */,
@@ -672,14 +628,6 @@
 				3892E64F23A1F0D5009861F8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		389A0DAC23BB2AF1008C46DB /* Interface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				389A0DAD23BB2AF1008C46DB /* Base */,
-			);
-			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

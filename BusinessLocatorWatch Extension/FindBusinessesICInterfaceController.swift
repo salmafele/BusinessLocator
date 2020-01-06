@@ -6,7 +6,6 @@
 //  Copyright © 2019 Salma. All rights reserved.
 //
 
-import WatchKit
 import Foundation
 
 
